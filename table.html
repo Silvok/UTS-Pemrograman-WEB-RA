@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>UTS PEMROGRAMAN WEBSITE-SILVA OKTARIA</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl position-relative bg-white d-flex p-0">
+
+        <!-- Sidebar Start -->
+        <div class="sidebar p-4">
+            <nav class="navbar bg-light navbar-light">
+                <div class="d-flex align-items-center ms-4 mb-4">
+                    <div class="position-relative">
+                        <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                        <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
+                    </div>
+                    <div class="ms-3">
+                        <h6 class="mb-0">Silva Oktaria</h6>
+                    </div>
+                </div>
+                <div class="navbar-nav w-100">
+                    <a href="index.html" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Profile</a>
+                    <a href="form.html" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Forms</a>
+                    <a href="table.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Sidebar End -->
+
+        <!-- Content Start -->
+        <div class="content">
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-2">
+                <a href="#" class="sidebar-toggler flex-shrink-0">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+            <!-- Navbar End -->
+
+            <!-- Table Start -->
+            <div class="container-fluid pt-4 px-4">
+                    <div class="col-12">
+                        <div class="bg-light rounded h-100 p-4">
+                            <h6 class="mb-4">Table Hasil Pengisian</h6>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No</th>
+                                            <th scope="col">Nama</th>
+                                            <th scope="col">Email</th>
+                                            <th scope="col">Alamat</th>
+                                            <th class="text-nowrap" scope="col">Jenis Kelamin</th>
+                                            <th class="text-nowrap" scope="col">Tanggal Lahir</th>
+                                            <th scope="col">Catatan</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="resultTableBody">
+                                    <!-- Dummy Data Start -->
+                                        <tr><td>1</td><td>John Doe</td><td>john.doe@gmail.com</td><td>123 Main St</td><td>Laki-laki</td><td>1990-01-01</td><td>Lorem ipsum dolor sit amet.</td></tr>
+                                        <tr><td>2</td><td>Jane Smith</td><td>jane.smith@gmail.com</td><td>456 Maple Ave</td><td>Perempuan</td><td>1992-03-15</td><td>Curabitur pretium dui nec.</td></tr>
+                                        <tr><td>3</td><td>Michael Johnson</td><td>michael.j@gmail.com</td><td>789 Oak Dr</td><td>Laki-laki</td><td>1988-06-12</td><td>Vivamus aliquet elit vel.</td></tr>
+                                        <tr><td>4</td><td>Emily White</td><td>emily.w@gmail.com</td><td>321 Pine Ln</td><td>Perempuan</td><td>1995-09-28</td><td>Sed ut perspiciatis unde.</td></tr>
+                                        <tr><td>5</td><td>Chris Martin</td><td>chris.m@gmail.com</td><td>55 Birch Rd</td><td>Laki-laki</td><td>1993-07-22</td><td>Nemo enim ipsam voluptatem.</td></tr>
+                                        <tr><td>6</td><td>Lisa Brown</td><td>lisa.b@gmail.com</td><td>88 Cedar St</td><td>Perempuan</td><td>1990-04-18</td><td>At vero eos et accusamus.</td></tr>
+                                        <tr><td>7</td><td>Robert Williams</td><td>robert.w@gmail.com</td><td>77 Willow Ave</td><td>Laki-laki</td><td>1989-11-05</td><td>Et harum quidem rerum.</td></tr>
+                                        <tr><td>8</td><td>Sarah Davis</td><td>sarah.d@gmail.com</td><td>99 Poplar Ln</td><td>Perempuan</td><td>1994-02-27</td><td>Nam libero tempore.</td></tr>
+                                        <tr><td>9</td><td>Mark Wilson</td><td>mark.w@gmail.com</td><td>22 Elm St</td><td>Laki-laki</td><td>1991-08-10</td><td>Omnis iste natus error.</td></tr>
+                                        <tr><td>10</td><td>Emma Clark</td><td>emma.c@gmail.com</td><td>66 Pine Blvd</td><td>Perempuan</td><td>1996-12-12</td><td>Doloremque laudantium.</td></tr>
+                                        <tr><td>11</td><td>David Moore</td><td>david.m@gmail.com</td><td>120 Oakwood St</td><td>Laki-laki</td><td>1990-01-30</td><td>Totam rem aperiam.</td></tr>
+                                        <tr><td>12</td><td>Olivia Johnson</td><td>olivia.j@gmail.com</td><td>213 Cherry Rd</td><td>Perempuan</td><td>1992-03-05</td><td>Eaque ipsa quae ab illo.</td></tr>
+                                        <tr><td>13</td><td>James Lee</td><td>james.l@gmail.com</td><td>87 Aspen Ave</td><td>Laki-laki</td><td>1987-09-12</td><td>Inventore veritatis et.</td></tr>
+                                        <tr><td>14</td><td>Alice Harris</td><td>alice.h@gmail.com</td><td>32 Beech St</td><td>Perempuan</td><td>1991-05-22</td><td>Nisi ut aliquid ex ea.</td></tr>
+                                        <tr><td>15</td><td>Daniel Young</td><td>daniel.y@gmail.com</td><td>10 Spruce Ln</td><td>Laki-laki</td><td>1993-11-14</td><td>Consectetur adipiscing elit.</td></tr>
+                                        <tr><td>16</td><td>Sophia Adams</td><td>sophia.a@gmail.com</td><td>47 Redwood Rd</td><td>Perempuan</td><td>1995-07-08</td><td>Sed do eiusmod tempor.</td></tr>
+                                        <tr><td>17</td><td>Matthew Green</td><td>matthew.g@gmail.com</td><td>74 Maple Ave</td><td>Laki-laki</td><td>1989-06-25</td><td>Incididunt ut labore et.</td></tr>
+                                        <tr><td>18</td><td>Grace King</td><td>grace.k@gmail.com</td><td>15 Ash Dr</td><td>Perempuan</td><td>1994-03-21</td><td>Dolore magna aliqua.</td></tr>
+                                        <tr><td>19</td><td>Luke Scott</td><td>luke.s@gmail.com</td><td>38 Oak Blvd</td><td>Laki-laki</td><td>1992-08-18</td><td>Ut enim ad minim veniam.</td></tr>
+                                        <tr><td>20</td><td>Isabella Hill</td><td>isabella.h@gmail.com</td><td>69 Cypress St</td><td>Perempuan</td><td>1991-02-14</td><td>Quis nostrud exercitation.</td></tr>
+                                        <tr><td>21</td><td>Henry Baker</td><td>henry.b@gmail.com</td><td>102 Maple Rd</td><td>Laki-laki</td><td>1988-12-06</td><td>Ullamco laboris nisi ut.</td></tr>
+                                        <tr><td>22</td><td>Ella Martinez</td><td>ella.m@gmail.com</td><td>57 Pine Ln</td><td>Perempuan</td><td>1995-10-04</td><td>Ex ea commodo consequat.</td></tr>
+                                        <tr><td>23</td><td>Joshua Perez</td><td>joshua.p@gmail.com</td><td>14 Willow St</td><td>Laki-laki</td><td>1993-01-17</td><td>Velit esse cillum dolore.</td></tr>
+                                        <tr><td>24</td><td>Amelia Turner</td><td>amelia.t@gmail.com</td><td>89 Elm Rd</td><td>Perempuan</td><td>1996-05-30</td><td>Eu fugiat nulla pariatur.</td></tr>
+                                        <tr><td>25</td><td>Oliver Carter</td><td>oliver.c@gmail.com</td><td>48 Cedar Ave</td><td>Laki-laki</td><td>1994-11-19</td><td>Excepteur sint occaecat.</td></tr>
+                                        <tr><td>26</td><td>Ava White</td><td>ava.w@gmail.com</td><td>103 Birch Ln</td><td>Perempuan</td><td>1993-04-26</td><td>Non proident, sunt in.</td></tr>
+                                        <tr><td>27</td><td>Benjamin Allen</td><td>benjamin.a@gmail.com</td><td>16 Pine St</td><td>Laki-laki</td><td>1990-02-03</td><td>Culpa qui officia deserunt.</td></tr>
+                                        <tr><td>28</td><td>Sophie Nelson</td><td>sophie.n@gmail.com</td><td>72 Redwood Blvd</td><td>Perempuan</td><td>1994-06-21</td><td>Mollit anim id est laborum.</td></tr>
+                                        <tr><td>29</td><td>Jack Wright</td><td>jack.w@gmail.com</td><td>58 Cedar Rd</td><td>Laki-laki</td><td>1991-09-11</td><td>Duis aute irure dolor.</td></tr>
+                                        <tr><td>30</td><td>Chloe Brown</td><td>chloe.b@gmail.com</td><td>82 Beech St</td><td>Perempuan</td><td>1995-03-29</td><td>In reprehenderit in.</td></tr>
+                                        <tr><td>31</td><td>Samuel Green</td><td>samuel.g@gmail.com</td><td>95 Pine Blvd</td><td>Laki-laki</td><td>1989-10-19</td><td>Voluptate velit esse.</td></tr>
+                                        <tr><td>32</td><td>Emily White</td><td>emily.w@gmail.com</td><td>123 Oak Rd</td><td>Perempuan</td><td>1990-11-20</td><td>Minim veniam, quis.</td></tr>
+                                        <tr><td>33</td><td>Aiden Lee</td><td>aiden.l@gmail.com</td><td>45 Cedar Ln</td><td>Laki-laki</td><td>1991-01-25</td><td>Nostrud exercitation ullamco.</td></tr>
+                                        <tr><td>34</td><td>Madison Harris</td><td>madison.h@gmail.com</td><td>38 Elm Blvd</td><td>Perempuan</td><td>1993-12-09</td><td>Laboris nisi ut aliquip.</td></tr>
+                                        <tr><td>35</td><td>William Thomas</td><td>william.t@gmail.com</td><td>66 Maple Ave</td><td>Laki-laki</td><td>1990-05-03</td><td>Ex ea commodo consequat.</td></tr>
+                                        <tr><td>36</td><td>Hannah Walker</td><td>hannah.w@gmail.com</td><td>82 Spruce Rd</td><td>Perempuan</td><td>1996-02-13</td><td>Reprehenderit in.</td></tr>
+                                        <tr><td>37</td><td>Joseph Allen</td><td>joseph.a@gmail.com</td><td>94 Oak Ln</td><td>Laki-laki</td><td>1988-08-14</td><td>Excepteur sint occaecat.</td></tr>
+                                        <tr><td>38</td><td>Abigail Scott</td><td>abigail.s@gmail.com</td><td>25 Birch Blvd</td><td>Perempuan</td><td>1991-11-04</td><td>Fugiat nulla pariatur.</td></tr>
+                                        <tr><td>39</td><td>Elijah Hill</td><td>elijah.h@gmail.com</td><td>77 Elm St</td><td>Laki-laki</td><td>1989-04-26</td><td>Sint occaecat cupidatat.</td></tr>
+                                        <tr><td>40</td><td>Zoe King</td><td>zoe.k@gmail.com</td><td>36 Maple Ave</td><td>Perempuan</td><td>1993-09-08</td><td>Proident, sunt in culpa.</td></tr>
+                                        <tr><td>41</td><td>Andrew Baker</td><td>andrew.b@gmail.com</td><td>14 Willow Ln</td><td>Laki-laki</td><td>1988-07-15</td><td>Deserunt mollit anim.</td></tr>
+                                        <tr><td>42</td><td>Lily Parker</td><td>lily.p@gmail.com</td><td>11 Cedar Rd</td><td>Perempuan</td><td>1995-01-24</td><td>Id est laborum.</td></tr>
+                                        <tr><td>43</td><td>Jonathan Wilson</td><td>jonathan.w@gmail.com</td><td>60 Pine Ave</td><td>Laki-laki</td><td>1990-06-22</td><td>Quis autem vel eum.</td></tr>
+                                        <tr><td>44</td><td>Eva Thompson</td><td>eva.t@gmail.com</td><td>98 Oak Ln</td><td>Perempuan</td><td>1992-05-19</td><td>Quis nostrud exercitation.</td></tr>
+                                        <tr><td>45</td><td>Ryan Martinez</td><td>ryan.m@gmail.com</td><td>17 Beech St</td><td>Laki-laki</td><td>1994-11-07</td><td>Nisi ut aliquid ex ea.</td></tr>
+                                        <tr><td>46</td><td>Isabella Turner</td><td>isabella.t@gmail.com</td><td>35 Spruce Rd</td><td>Perempuan</td><td>1993-10-29</td><td>Velit esse quam nihil.</td></tr>
+                                        <tr><td>47</td><td>Christopher Lopez</td><td>chris.l@gmail.com</td><td>54 Willow Blvd</td><td>Laki-laki</td><td>1991-08-11</td><td>Ullam corporis suscipit.</td></tr>
+                                        <tr><td>48</td><td>Mia Clark</td><td>mia.c@gmail.com</td><td>26 Oakwood Ln</td><td>Perempuan</td><td>1995-03-05</td><td>Nemo enim ipsam.</td></tr>
+                                        <tr><td>49</td><td>Gabriel Davis</td><td>gabriel.d@gmail.com</td><td>42 Elm Blvd</td><td>Laki-laki</td><td>1990-12-22</td><td>Voluptatem sequi nesciunt.</td></tr>
+                                        <tr><td>50</td><td>Anna Johnson</td><td>anna.j@gmail.com</td><td>15 Cedar Rd</td><td>Perempuan</td><td>1992-02-11</td><td>Magni dolores eos qui.</td></tr>
+                                    <!-- Dummy Data End -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Table End -->
+
+        </div>
+        <!-- Content End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/chart/chart.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+        function getQueryParams() {
+            const params = {};
+            const queryString = window.location.search.substring(1);
+            const regex = /([^&=]+)=([^&]*)/g;
+            let match;
+            while (match = regex.exec(queryString)) {
+                params[decodeURIComponent(match[1])] = decodeURIComponent(match[2]);
+            }
+            return params;
+        }
+
+        function addToTable(data) {
+            const tableBody = document.getElementById("resultTableBody");
+            const row = document.createElement("tr");
+            const cells = [
+                tableBody.childElementCount + 1,  // No
+                data.nama,
+                data.email,
+                data.alamat,
+                data.jenisKelamin,
+                data.tanggalLahir,
+                data.catatan
+            ];
+
+            cells.forEach(cellData => {
+                const cell = document.createElement("td");
+                cell.textContent = cellData;
+                row.appendChild(cell);
+            });
+
+            tableBody.appendChild(row);
+        }
+
+        const params = getQueryParams();
+        if (Object.keys(params).length > 0) {
+            addToTable(params);
+        }
+    </script>
+</body>
+
+</html>
